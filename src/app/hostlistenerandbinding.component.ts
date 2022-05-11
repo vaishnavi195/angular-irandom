@@ -8,14 +8,14 @@ import { Component, Input, HostBinding, HostListener } from '@angular/core';
 export class HostComponent {
   @Input() name: string;
 
-  @HostBinding('style.color')
-  color = 'red';
+  // @HostBinding('style.color')
+  // color = 'red';
 
-  // change() {
+  // // change() {
+  // //   this.color = 'blue';
+  // // }
+
+  // @HostListener('click') function() {
   //   this.color = 'blue';
   // }
-
-  @HostListener('click') function() {
-    this.color = 'blue';
-  }
 }
