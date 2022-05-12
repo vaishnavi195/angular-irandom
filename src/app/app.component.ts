@@ -23,5 +23,11 @@ export class AppComponent {
     this.childRef.viewref.clear();
     const resolvefac = this.cmpres.resolveComponentFactory(this.components[id]);
     this.childRef.viewref.createComponent(resolvefac);
+
+  }
+
+  
+  click(){
+    this.display=!this.display
   }
 }

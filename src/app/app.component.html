@@ -3,5 +3,20 @@ JDKKDKD
 <button (click)="loadComponent(1)">Hi</button>
 <ng-template appHost></ng-template>
 <host appList highlightcolor="orange"></host>
-<p *appstruct="display">Hiiiiiiii</p>
+<button (click)="click()">click</button>
+<ng-template [appstruct]="display">
+  <p>Hiiiiiiii</p>
+</ng-template>
+<p>
+  <ng-template #template>gowtham</ng-template> hi my name is
+  <ng-container>vaishnavi</ng-container>
+  <ng-container *ngTemplateOutlet="template"></ng-container> how are you
+</p>
 
+<table>
+  <tr *ngFor="let i of [1, 2, 3, 4, 5]">
+    <ng-container *ngIf="i <= 4">
+      <td>{{ i }}</td>
+    </ng-container>
+  </tr>
+</table>

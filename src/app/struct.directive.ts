@@ -8,8 +8,10 @@ export class StructDirective {
   @Input() set appstruct(value) {
     if (value && !this.rendered) {
       this.container.createEmbeddedView(this.template);
+      this.rendered = true;
     } else if (!value && this.rendered) {
       this.container.clear();
+      this.rendered = true;
     }
   }
   constructor(
