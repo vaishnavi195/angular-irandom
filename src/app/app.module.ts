@@ -7,6 +7,7 @@ import { HelloComponent, hiComponent } from './hello.component';
 import { HostDirective } from './host.directive';
 import { HostComponent } from './hostlistenerandbinding.component';
 import { ListDirective } from './list.directive';
+import { StructDirective } from './struct.directive';
 
 @NgModule({
   imports: [BrowserModule, FormsModule],
@@ -15,7 +16,9 @@ import { ListDirective } from './list.directive';
     HelloComponent,
     HostDirective,
     hiComponent,
-    HostComponent, ListDirective
+    HostComponent,
+    ListDirective,
+    StructDirective,
   ],
   entryComponents: [HelloComponent, hiComponent],
   bootstrap: [AppComponent],
